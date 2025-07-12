@@ -1,0 +1,203 @@
+1) Positive/Negative
+import java.util.Scanner;
+
+class First{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		if a<0:
+			System.out.println(a+"is Negative");
+		if a==0:
+			System.out.println(a+"is Null");
+		if a>=0:
+			System.out.println(a+"is Positive");
+	}
+}
+
+2)Odd/Even
+import java.util.Scanner;
+
+class Main{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		if (a%2==0)
+		{
+			System.out.println(a+" is Even");
+		}
+		else{
+			System.out.println(a+" is Odd");
+		}
+		
+	}
+}
+
+3)Ending with number 7
+import java.util.Scanner;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int num1=sc.nextInt();
+        int num2=sc.nextInt();
+        if (num1%10==7 && num2%10==7)
+        {
+            System.out.println("True");
+        }
+        else{
+            System.out.println("False");
+        }
+    }
+}
+
+4)Ascending order of 2 alphabets
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        String a = sc.nextLine();
+        String b = sc.nextLine();
+        
+        if (a.compareToIgnoreCase(b) < 0) {
+            System.out.println(a + "," + b);
+        } else {
+            System.out.println(b + "," + a);
+        }
+    }
+}
+
+5)import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		 Scanner sc=new Scanner(System.in);
+		 char input=sc.next().charAt(0);
+		 if(Character.isLetter(input))
+		 {
+		     System.out.print(input+" is Alphabet");
+		 }else if(Character.isDigit(input)){
+		     System.out.print(input+" is Digit");
+		 }else{
+		     System.out.print(input+" is Special character");
+		 }
+	}
+}
+
+6)public class Example {
+    public static void main(String[] args) {
+        if (args.length == 0) {
+            System.out.println("No Values");
+        } else {
+            String result = String.join(",", args);
+            System.out.println(result);
+        }
+    }
+}
+
+7)public class InterestCalculator {
+
+    public static void main(String[] args) {
+        String gender = args[0];
+        int age = Integer.parseInt(args[1]);
+        double interest = 0.0;
+        if (gender.equalsIgnoreCase("Female")) {
+            if (age >= 1 && age <= 58) {
+                interest = 8.2;
+            } else if (age >= 59 && age <= 100) {
+                interest = 9.2;
+            }
+        } else if (gender.equalsIgnoreCase("Male")) {
+            if (age >= 1 && age <= 58) {
+                interest = 8.4;
+            } else if (age >= 59 && age <= 100) {
+                interest= 10.5;
+            }
+        }
+       if (interest != 0.0) {
+            System.out.println(interest + "%");
+        } else {
+            System.out.println("Invalid");
+        }
+    }
+}
+
+8)import java.util.Scanner;
+
+public class UppercaseConverter {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String us= scanner.nextLine();
+        String up= us.toUpperCase();
+        System.out.println(up);
+        String low=up.toLowerCase();
+        System.out.print(low);
+    }
+}
+
+9)import java.util.Scanner;
+public class Color{
+public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        char color = scanner.next().charAt(0);
+        String co;
+        switch (color) {
+            case 'R':
+                co = "Red";
+                break;
+            case 'B':
+                co = "Blue";
+                break;
+            case 'G':
+                co = "Green";
+                break;
+            case 'O':
+                co= "Orange";
+                break;
+            case 'Y':
+                co = "Yellow";
+                break;
+            case 'W':
+                co = "White";
+                break;
+            default:
+                co = "Invalid Code";
+        }
+
+        System.out.println(colorName);
+    }
+}
+
+10)public class PrintNumbersWithTab {
+
+    public static void main(String[] args) {
+        for (int i = 1; i <= 10; i++) {
+            System.out.print(i + "\t");
+        }
+    }
+}
+
+11)public class EvenNumbers {
+
+    public static void main(String[] args) {
+        for (int i = 23; i <= 57; i++) {
+            if (i % 2 == 0) {
+                System.out.println(i);
+            }        }   }}
+12)public class PrimeNumbers {
+    public static void main(String[] args) {
+        for (int num = 10; num <= 99; num++) {
+            boolean isPrime = true;
+            for (int i = 2; i <= num / 2; i++) {
+                if (num % i == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+           if (isPrime) {
+                System.out.print(num + " ");
+            }
+        }
+    }
+}
+13)
