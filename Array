@@ -1,0 +1,65 @@
+3)import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int size=sc.nextInt();
+		int[] a=new int[size];
+	    for(int i=0;i<size;i++)
+	    {
+	        a[i]=sc.nextInt();
+	    }
+	    int num=sc.nextInt();
+	    int fl=1;
+	    for(int i=0;i<size;i++)
+	    {
+	        if(num==a[i])
+	        {
+	            System.out.println(i+"th");
+	            fl=0;
+	        }
+	    }
+	    if(fl==1){
+	        System.out.println("-1");
+	    }
+	}
+}
+
+2)import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int size=sc.nextInt();
+		int[] a=new int[size];
+	    for(int i=0;i<size;i++)
+	    {
+	        a[i]=sc.nextInt();
+	    }
+	    int min=0;
+	    for(int i=0;i<size;i++)
+	    {
+	        if (min<a[i])
+	        {
+	            i++;
+	        }
+	        else{
+	            min=a[i];
+	        }
+	    }
+	    System.out.print(min);
+	}
+}
+
+4)import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		char s=sc.next().charAt(0);
+		System.out.println((int)s);
+	}
+}
+
+
+
